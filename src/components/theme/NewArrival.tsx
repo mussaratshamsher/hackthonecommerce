@@ -10,11 +10,12 @@ import services from '../../../public/images/services.png'
 import services1 from '../../../public/images/services1.png'
 import services2 from '../../../public/images/services2.png'
 import { MoveUp } from 'lucide-react'
+import Link from 'next/link'
 
 
 export default function NewArrival() {
   return (
-    <div className='h-auto'>
+    <div className='h-auto' >
  <div className=' bg-red-500 w-5 h-10 rounded md:ml-32 ml-5 mb-3'> 
     <h1 className='md:ml-10 ml-7 text-red-500 mt-7'> Featured </h1>
   </div>
@@ -59,7 +60,9 @@ export default function NewArrival() {
     <h1 className='md:mt-5 mt-3 font-bold'>MONEY BACK GUARANTEE</h1>
     <p className='md:mt-3 mt-2'>We return money within 30 days</p>
 </div>
+<Link href='../'>
      <MoveUp className='rounded-full w-10 h-10 md:ml-[1050px] mt-5 md:mt-10' id='sale'/>
+     </Link>
 </div>
     </div>
   )

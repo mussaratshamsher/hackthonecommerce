@@ -9,7 +9,7 @@ import fsale3 from '../../../public/images/fsale3.png'
 import fsale4 from '../../../public/images/fsale4.png'
 import { Eye, Heart } from 'lucide-react'
 
-import 'react-alice-carousel/lib/alice-carousel.css';
+
 import { Button } from '../ui/button'
 
 export default function FlashSales() {

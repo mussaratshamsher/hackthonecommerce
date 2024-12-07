@@ -13,6 +13,7 @@ import SellingProducts from '@/components/theme/SellingProducts'
 import MusicCategory from '@/components/theme/MusicCategory'
 import Products from '@/components/theme/Products'
 import NewArrival from '@/components/theme/NewArrival'
+import Link from 'next/link'
 
 
 
@@ -20,7 +21,7 @@ export default function Home() {
 
   return (
 
-<div className='w-full h-auto'>
+<div className='w-full h-auto' >
 
     <div className='grid md:grid-cols-4 grid-cols-1 grid-rows-2 md:h-[400px] h-[450px] w-full md:mb-32'>
     
@@ -78,6 +79,7 @@ export default function Home() {
        
     </div>
  <h1></h1>
+
     <h1 className='flex md:ml-20  ml-24 gap-3 mt-5 mb-10 '><ArrowLeft className='rounded-full w-10 h-10' id='sale'/> 
     <ArrowRight className='rounded-full w-10 h-10' id='sale'/></h1>
   </div>
