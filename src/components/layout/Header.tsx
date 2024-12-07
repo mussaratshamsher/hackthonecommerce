@@ -23,7 +23,13 @@ export default function Header() {
     };  
 
     return (  
-        <div>  
+        <div >
+
+            <div id='banner'>
+            <h1 className='w-full bg-black text-white h-10 md:text-1xl  mt-2 p-2 text-xs' id='scrolling-text'>
+               Summer Sale For All Swim Suits & Free Express Delivery - OFF 50% <span className='font-bold underline'>SHOP NOW</span>
+            </h1></div>
+
             <div className="w-full mt-5 md:h-20 md:grid md:grid-cols-3 p-5 hidden">  
                 <h1 className='font-bold text-4xl'>Exclusive</h1>  
                 <ul className="md:flex md:flex-row gap-10 hidden">  
