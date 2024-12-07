@@ -27,7 +27,7 @@ export default function Header() {
 
             <div id='banner'>
             <h1 className='w-full bg-black text-white h-10 md:text-1xl  mt-2 p-2 text-xs' id='scrolling-text'>
-               Summer Sale For All Swim Suits & Free Express Delivery - OFF 50% <span className='font-bold underline'>SHOP NOW</span>
+               Summer Sale For All Swim Suits & Free Express Delivery - OFF 50%! <span className='font-bold underline'>SHOP NOW</span>
             </h1></div>
 
             <div className="w-full mt-5 md:h-20 md:grid md:grid-cols-3 p-5 hidden">  
@@ -55,7 +55,7 @@ export default function Header() {
                           
                         </div>  
                         {isDropdownOpen && (  
-                            <div className="absolute right-0 z-10 bg-gray-300 text-white text-xs shadow-md rounded mt-2 w-40">  
+                            <div className="absolute right-0 z-10  text-white text-xs shadow-md rounded mt-2 w-40" id='back'>  
                                 <ul className="flex flex-col p-3 gap-2">  
                                     <li className='hover:underline hover:decoration-white'>  
                                         <Link href="/profile" onClick={closeDropdown}><i className='bx bx-user'></i>Manage My account</Link>  
@@ -114,7 +114,7 @@ export default function Header() {
                       
                         </div>  
                         {isDropdownOpen && (  
-                            <div className="absolute right-0 z-10 bg-gray-300 text-white text-xs shadow-md rounded mt-2 w-40">  
+                            <div className="absolute right-0 z-10 text-white bg-black text-xs shadow-md rounded mt-2 w-40"  >  
                                 <ul className="flex flex-col p-2 gap-1">  
                                 <li className='hover:underline hover:decoration-white'>  
                                         <Link href="/profile" onClick={closeDropdown}><i className='bx bx-user'></i>Manage My account</Link>  

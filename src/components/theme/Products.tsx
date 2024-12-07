@@ -22,7 +22,7 @@ export default function Products() {
   return (
 <div className='h-auto'> 
     <div className=' bg-red-500 w-5 h-10 rounded md:ml-32 ml-5 mb-3'> 
-    <h1 className='md:ml-10 ml-7 text-red-500 mt-7'> Categories </h1>
+    <h1 className='md:ml-10 ml-7 text-red-500 mt-7 p-2'> Categories </h1>
   </div>
  <div className='grid grid-cols-1 md:grid-cols-2'>
  <h1 className='md:text-3xl text-2xl font-bold md:mt-8 md:ml-32 ml-5'>Browse By Category</h1>
@@ -31,7 +31,7 @@ export default function Products() {
 </div>
 
 
-<div className='flex md:flex-row flex-col md:ml-20 m-auto mt-5'>
+<div className='flex md:flex-row flex-col md:ml-20 m-auto mt-5 p-3'>
 
   {/* product 1 */}
         <div className='w-[230px] h-[300px] md:mt-10 ml-10'>
@@ -103,7 +103,7 @@ export default function Products() {
             </div>
 </div>
             {/* 2nd row products */}
-            <div className='flex md:flex-row flex-col md:ml-20 m-auto mt-5'>
+            <div className='flex md:flex-row flex-col md:ml-20 m-auto mt-5 p-3 gap-2'>
             {/* product 5 */}
         <div className='w-[230px] h-auto md:mt-10 ml-10'>
         <div className=' w-[220px] h-[200px] ' id='sale'>

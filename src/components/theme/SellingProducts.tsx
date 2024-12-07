@@ -11,17 +11,17 @@ import cooler from "../../../public/images/cooler.png"
 
 export default function SellingProducts() {
   return (
-    <div> 
+    <div className='w-full'> 
 
     <div className='bg-red-500 w-5 h-10 rounded md:ml-32 ml-5 mb-3'> 
-    <h1 className='md:ml-10 ml-7 text-red-500 mt-7'> This Month </h1>
+    <h1 className='md:ml-10 ml-7 text-red-500 md:mt-7 mt-10 w-20 '>This Month </h1>
   </div>
  <div className='grid grid-cols-1 md:grid-cols-2'>
  <h1 className='md:text-3xl text-2xl font-bold md:mt-8 md:ml-32 ml-5'>Best Selling Products</h1>
 <Button variant={'ghost'}>View All</Button>
 </div>
 
-<div className='flex md:flex-row flex-col md:ml-20 m-auto mt-5'>
+<div className='flex md:flex-row flex-col md:ml-20 m-auto mt-5 p-4'>
         <div className='w-[220px] h-[300px] md:mt-10 ml-10'>
 
         <div className='w-[220px] h-[200px] ' id='sale'>

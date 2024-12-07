@@ -17,7 +17,7 @@ export default function NewArrival() {
   return (
     <div className='h-auto' >
  <div className=' bg-red-500 w-5 h-10 rounded md:ml-32 ml-5 mb-3'> 
-    <h1 className='md:ml-10 ml-7 text-red-500 mt-7'> Featured </h1>
+    <h1 className='md:ml-10 ml-7 text-red-500 mt-7 p-2'> Featured </h1>
   </div>
  <h1 className='md:text-3xl text-2xl font-bold md:mt-8 md:ml-32 ml-5'>New Arrival</h1>
 
@@ -41,7 +41,7 @@ export default function NewArrival() {
 
 {/* Services */}
 
-<div className='grid grid-cols-1 md:grid-cols-3 p-28'>
+<div className='grid grid-cols-1 md:grid-cols-3 md:p-28 gap-2'>
 
 <div className=' flex flex-col items-center'>
     <Image src={services} alt='' width={500} height={500} className='w-20 h-20'/>
@@ -61,7 +61,7 @@ export default function NewArrival() {
     <p className='md:mt-3 mt-2'>We return money within 30 days</p>
 </div>
 <Link href='../'>
-     <MoveUp className='rounded-full w-10 h-10 md:ml-[1050px] mt-5 md:mt-10' id='sale'/>
+     <MoveUp className='rounded-full w-10 h-10 md:ml-[1050px] ml-36 mb-5 mt-5 md:mt-10' id='sale'/>
      </Link>
 </div>
     </div>

@@ -137,3 +137,8 @@ body {
       transform: translateX(-100%); /* Move to the left edge */  
   }  
 }  
+
+
+#back{
+backdrop-filter:blur(40px);
+}

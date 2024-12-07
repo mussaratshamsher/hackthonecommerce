@@ -9,7 +9,7 @@ export default function Contact() {
 <Link href='./../contact' className='text-black'> Contact</Link></div>
 
 {/* form layout */}
-<div className='grid md:grid-cols-3 col-span-1 md:p-16 md:gap-10 md:ml-20 md:mr-20 '>
+<div className='grid md:grid-cols-3 col-span-1 md:p-16 md:gap-10 md:ml-20 md:mr-20 mb-5'>
 
 {/* box 1 */}
   <div className='rounded p-5 mt-5' id='shadow'>
@@ -29,13 +29,13 @@ export default function Contact() {
 {/* box 2 */}
   <div className=' grid md:col-span-2 rounded mt-3' id='shadow'>
 
-   <div className='flex flex-col md:flex-row gap-6 md:mt-10 justify-center items-center'>
-    <input type="text" placeholder='Your Name*' className='mt-5 md:ml-5 p-2 w-44 h-12 rounded-md hover:border-gray-400' id='sale'/>
+   <div className='flex flex-col md:flex-row gap-6 md:mt-10 mt-3 justify-center items-center'>
+    <input type="text" placeholder='Your Name*' className='md:ml-5 p-2 w-44 h-12 rounded-md hover:border-gray-400' id='sale'/>
     <input type="email" placeholder='Your Email*' className='p-2 w-44 h-12 rounded-md' id='sale'/>
     <input type="number" placeholder='Your phone*' className='p-2 w-44 h-12 rounded-md' id='sale'/>
    </div>
    <input type="text" placeholder='Your Message' className='p-2 md:ml-5 md:w-[580px] md:h-[110px] w-[250px] h-[100px] ml-9 mt-5 rounded-md ' id='sale'/>
-   <Button variant={'destructive'} className='w-40 md:ml-[440px] ml-16 mb-10 mt-3'>Send Message</Button>
+   <Button variant={'destructive'} className='w-40 md:ml-[440px] ml-20 mt-3 mb-2'>Send Message</Button>
 
   </div>
 

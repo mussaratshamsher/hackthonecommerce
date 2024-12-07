@@ -17,7 +17,7 @@ export default function FlashSales() {
   return (
    <div>
     
-    <div className='flex md:flex-row flex-col md:ml-20 m-auto'>
+    <div className='flex md:flex-row flex-col md:ml-20 p-4'>
         
         <div className='w-[220px] h-auto md:mt-10 ml-10'>
         <div className='w-[220px] h-[200px] ' id='sale'>

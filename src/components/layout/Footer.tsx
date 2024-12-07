@@ -9,7 +9,7 @@ import footericon from '../../../public/images/footericon.png'
 export default function Footer() {
   return (
     <div className='bg-black p-16 '>
-    <div className='grid md:grid-cols-5 grid-cols-1 text-white '>
+    <div className='grid md:grid-cols-5 grid-cols-1 text-white gap-2 '>
 
 <div>
   <h1 className='text-1xl font-bold md:mt-2 mt-5'>Exclusive</h1>

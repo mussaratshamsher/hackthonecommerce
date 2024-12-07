@@ -13,8 +13,6 @@ import SellingProducts from '@/components/theme/SellingProducts'
 import MusicCategory from '@/components/theme/MusicCategory'
 import Products from '@/components/theme/Products'
 import NewArrival from '@/components/theme/NewArrival'
-import Link from 'next/link'
-
 
 
 export default function Home() {
@@ -63,7 +61,7 @@ export default function Home() {
 
 <div className='md:-mt-14 mt-14'>
   <div className='bg-red-500 w-5 h-10 rounded md:ml-32 ml-5 mb-3'> 
-    <h1 className='md:ml-10 ml-7 text-red-500 mt-7'>Today's </h1>
+    <h1 className='md:ml-10 ml-7 text-red-500 md:mt-7 p-2 mt-14'>Today's </h1>
   </div>
   <div className='grid grid-cols-1 md:grid-cols-4'>
     <h1 className='text-3xl font-bold md:mt-8 md:ml-32 ml-5'>Flash Sales</h1>
