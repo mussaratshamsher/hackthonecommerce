@@ -8,7 +8,7 @@ import footericon from '../../../public/images/footericon.png'
 
 export default function Footer() {
   return (
-    <div className='bg-black p-16 '>
+    <div className='bg-black p-16 h-auto '>
     <div className='grid md:grid-cols-5 grid-cols-1 text-white gap-2 '>
 
 <div>

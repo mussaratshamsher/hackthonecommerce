@@ -12,14 +12,14 @@ export default function Contact() {
 <div className='grid md:grid-cols-3 col-span-1 md:p-16 md:gap-10 md:ml-20 md:mr-20 mb-5'>
 
 {/* box 1 */}
-  <div className='rounded p-5 mt-5' id='shadow'>
+  <div className='rounded p-5 mt-3' id='shadow'>
 
 <h1 className='font-bold'><i className='bx bxs-phone bg-red-500 rounded-full p-2 text-white'></i> Call to Us</h1>
   <p className='mt-3'>Available 24/7,7 days a week</p>
   <p className='mt-3'>Phone: +989073948601</p>
   <hr className='w-40 border-slate-500 mt-3 mb-3'/>
 
-  <h1 className='font-bold'><i className='bx bxs-phone bg-red-500 rounded-full p-2 text-white'></i>Write to Us</h1>
+  <h1 className='flex font-bold gap-2'><i className='bx bxs-edit bg-red-500 rounded-full p-2 text-white'></i> Write to Us</h1>
   <p className='mt-3'>fill out our form & we'll <br /> contact you within 24 hours.</p>
   <p className='mt-3'>Email Us:customer@exclusive.com </p>
   <p className='mt-3'>Email Us:exclusive.com </p>
