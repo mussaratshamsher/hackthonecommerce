@@ -57,23 +57,23 @@ export default function Header() {
                           
                         </div>  
                         {isDropdownOpen && (  
-                            <div className="absolute right-0 z-10  text-white text-xs shadow-md rounded mt-2 w-40" id='back'>  
-                                <ul className="flex flex-col p-3 gap-2">  
-                                    <li className='hover:underline hover:decoration-white'>  
-                                        <Link href="/auth" onClick={closeDropdown}><i className='bx bx-user'></i>Manage My account</Link>  
-                                    </li>  
-                                    <li className='hover:underline hover:decoration-white'>  
-                                        <Link href="/cart" onClick={closeDropdown}><i className='bx bx-folder-open'></i>My Orders</Link>  
-                                    </li>  
-                                    <li className='hover:underline hover:decoration-white'>  
-                                        <Link href="/checkout" onClick={closeDropdown}><i className='bx bx-x-circle'></i>My Cancellations</Link>  
-                                    </li>  
-                                    <li className='hover:underline hover:decoration-white '>  
-                                        <Link href="/checkout" onClick={closeDropdown}><i className='bx bx-star'></i> Reviews</Link>  
-                                    </li>  
-                                    <li className='hover:underline hover:decoration-white'>  
-                                        <Link href="/auth" onClick={closeDropdown}><i className='bx bx-log-out'></i>Logout</Link>  
-                                    </li>  
+   <div className="absolute right-0 z-10  text-white text-xs shadow-md rounded mt-2 w-40" id='back'>  
+    <ul className="flex flex-col p-3 gap-2">  
+
+     <li className='hover:underline hover:decoration-white'>  
+  <Link href="/auth" onClick={closeDropdown}><i className='bx bx-user'></i>Manage My account</Link></li> 
+
+     <li className='hover:underline hover:decoration-white'>
+         <Link href="/cart" onClick={closeDropdown}><i className='bx bx-folder-open'></i>My Orders</Link></li> 
+
+      <li className='hover:underline hover:decoration-white'>  
+      <Link href="/checkout" onClick={closeDropdown}><i className='bx bx-x-circle'></i>My Cancellations</Link></li> 
+
+      <li className='hover:underline hover:decoration-white '>  
+       <Link href="/checkout" onClick={closeDropdown}><i className='bx bx-star'></i> Reviews</Link></li>  
+
+    <li className='hover:underline hover:decoration-white'>  
+     <Link href="/auth" onClick={closeDropdown}><i className='bx bx-log-out'></i>Logout</Link> </li>  
                                 </ul>  
                             </div>  
                         )}  
@@ -84,8 +84,8 @@ export default function Header() {
 
             {/* for Mobile Screen */}  
             <div className='md:hidden'>  
-                <div className='w-full h-10 grid grid-cols-2 p-2'>  
-                    <h1 className='text-1xl font-bold'> Exclusive</h1>  
+      <div className='w-full h-10 grid grid-cols-2 p-2'>  
+       <h1 className='text-1xl font-bold'> Exclusive</h1>  
                     <Sheet>  
                         <SheetTrigger className="hover:text-gray-600 "> <SquareMenu className='ml-28'/></SheetTrigger>  
                         <SheetContent>  
@@ -109,31 +109,32 @@ export default function Header() {
                             <Search size={20} strokeWidth={1.25} className='-ml-8 -z-0 mt-1 text-gray-700'/>  
                         </Link>  
                     </li>  
-                    <li><Link href="wishlist"><Heart/></Link></li>  
-                    <li><Link href="cart"><ShoppingCart/></Link></li>  
+                    <li><Link href="/checkout"><Heart/></Link></li>  
+                    <li><Link href="/cart"><ShoppingCart/></Link></li>  
                     <li className='relative'>  
                         <div onClick={toggleDropdown} className='flex items-center cursor-pointer'>  
                          <User />  
                       
                         </div>  
                         {isDropdownOpen && (  
-                            <div className="absolute right-0 z-10 text-white bg-black text-xs shadow-md rounded mt-2 w-40"  >  
-                                <ul className="flex flex-col p-2 gap-1">  
-                                <li className='hover:underline hover:decoration-white'>  
-                                        <Link href="/auth" onClick={closeDropdown}><i className='bx bx-user'></i>Manage My account</Link>  
-                                    </li>  
-                                    <li className='hover:underline hover:decoration-white'>  
-                                        <Link href="/cart" onClick={closeDropdown}><i className='bx bx-folder-open'></i>My Orders</Link>  
-                                    </li>  
-                                    <li className='hover:underline hover:decoration-white'>  
-                                        <Link href="/checkout" onClick={closeDropdown}><i className='bx bx-x-circle'></i>My Cancellations</Link>  
-                                    </li>  
-                                    <li className='hover:underline hover:decoration-white '>  
-                                        <Link href="/checkout" onClick={closeDropdown}><i className='bx bx-star'></i> Reviews</Link>  
-                                    </li>  
-                                    <li className='hover:underline hover:decoration-white'>  
-                                        <Link href="/auth" onClick={closeDropdown}><i className='bx bx-log-out'></i>Logout</Link>  
-                                    </li>  
+       <div className="absolute right-0 z-10 text-white bg-black text-xs shadow-md rounded mt-2 w-40"  >  
+        <ul className="flex flex-col p-2 gap-1"> 
+
+      <li className='hover:underline hover:decoration-white'> 
+       <Link href="/auth" onClick={closeDropdown}><i className='bx bx-user'></i>Manage My account</Link></li> 
+
+     <li className='hover:underline hover:decoration-white'>  
+    <Link href="/cart" onClick={closeDropdown}><i className='bx bx-folder-open'></i>My Orders</Link></li>  
+
+    <li className='hover:underline hover:decoration-white'>  
+    <Link href="/checkout" onClick={closeDropdown}><i className='bx bx-x-circle'></i>My Cancellations</Link></li> 
+
+    <li className='hover:underline hover:decoration-white '>  
+  <Link href="/checkout" onClick={closeDropdown}><i className='bx bx-star'></i> Reviews</Link></li> 
+
+<li className='hover:underline hover:decoration-white'>  
+ <Link href="/auth" onClick={closeDropdown}><i className='bx bx-log-out'></i>Logout</Link></li>  
+                               
                                 </ul>  
                             </div>  
                         )}  
