@@ -18,7 +18,7 @@ export default function FlashSales() {
   return (
    <div>
     
-    <div className='flex md:flex-row flex-col lg:ml-20 p-4'>
+    <div className='grid  md:grid md:grid-cols-2 lg:grid-cols-4 flex-col lg:ml-20 2xl:gap-20 p-4'>
         {/* pro 1  */}
         <div className='w-[220px] h-auto md:mt-10 ml-10'>
         <div className='w-[220px] h-[200px] ' id='sale'>
@@ -28,7 +28,7 @@ export default function FlashSales() {
             <Heart className='bg-white w-5 h-5 rounded-full ml-20 mt-3 text-[20px]'/></div>
             <Eye className='bg-white w-5 h-5 rounded-full ml-48'/>    
             <Image src={fsale1} alt='' width={100} height={100} 
-            className='w-24 h-24 ml-14  transition-all hover:scale-125 hover:ease-linear'/>
+            className='w-24 h-24 ml-14 transition-all hover:scale-125 hover:ease-linear'/>
             <h1 className='text-center' id='cart'> Add to cart</h1>
         </div>
         <h1 className='bold mt-5'>HAVIT HV-G92Gamepad</h1>

@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 
 import { Heart } from 'lucide-react';
+import Link from 'next/link';
 
 const AddQuantity = () => {
 
@@ -25,9 +26,9 @@ const AddQuantity = () => {
         +   
     </button>  
 </div>
-
-<button className='bg-red-500 text-white rounded-sm text-sm w-20 ml-3 md:ml-0 md:w-32 hover:animate-pulse'>
-  Buy Now</button>
+ <Link href='/checkout'>
+ <button className='bg-red-500 text-white rounded-sm text-sm w-20 h-8 ml-3 md:ml-0 md:w-32 hover:animate-pulse'>
+  Buy Now</button> </Link>
 <h1>
 <Heart className="p-2 border rounded-sm hover:bg-red-500 hover:text-white"/></h1>
 </div>

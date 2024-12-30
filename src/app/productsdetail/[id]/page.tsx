@@ -196,7 +196,7 @@ className="md:w-[400px] 2xl:w-[600px]sm:h-[300px] md:h-[400px] md:mt-10 md:py-10
 
     {/* cart  */}
     <button onClick={handleAddToCart}   
-    className="mt-4 w-full p-2 bg-red-600 text-white hover:bg-red-500 rounded">  
+    className=" mb-5 w-full p-2 bg-red-600 text-white hover:bg-red-500 rounded">  
      Add to Cart </button>  
 
      <div className="grid grid-cols-1 border-2 border-gray-400 2xl:mt-10">

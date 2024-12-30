@@ -35,10 +35,10 @@ export default function Header() {
 
                 <ul className="md:flex md:flex-row md:gap-2 lg:gap-5 2xl:gap-10 hidden">  
                     <li className='hover:underline hover:decoration-gray-500'><Link href="/">Home</Link></li> 
-                    <li className='hover:underline hover:decoration-gray-500'><Link href="./../products">Products</Link></li> 
-                    <li className='hover:underline hover:decoration-gray-500'><Link href="./../contact">Contact</Link> </li>  
-                    <li className='hover:underline hover:decoration-gray-500'><Link href="./../about">About</Link></li>  
-                    <li className='hover:underline hover:decoration-gray-500'><Link href="./../account">Sign Up</Link></li>  
+                    <li className='hover:underline hover:decoration-gray-500'><Link href="/products">Products</Link></li> 
+                    <li className='hover:underline hover:decoration-gray-500'><Link href="/contact">Contact</Link> </li>  
+                    <li className='hover:underline hover:decoration-gray-500'><Link href="/about">About</Link></li>  
+                    <li className='hover:underline hover:decoration-gray-500'><Link href="/auth">Sign Up</Link></li>  
                 </ul>  
                 <ul className='flex md:gap-3 gap-1'>  
                     <li>  
@@ -48,8 +48,8 @@ export default function Header() {
                             <Search className='-ml-7 -z-0 mt-1'/>  
                         </Link>  
                     </li>  
-                    <li><Link href="wishlist"><Heart/></Link></li>  
-                    <li><Link href="cart"><ShoppingCart/></Link></li>  
+                    <li><Link href="/checkout"><Heart/></Link></li>  
+                    <li><Link href="/cart"><ShoppingCart/></Link></li>  
                     {/* User Dropdown */}  
                     <li className='relative'>  
                         <div onClick={toggleDropdown} className='flex items-center cursor-pointer'>  
@@ -60,19 +60,19 @@ export default function Header() {
                             <div className="absolute right-0 z-10  text-white text-xs shadow-md rounded mt-2 w-40" id='back'>  
                                 <ul className="flex flex-col p-3 gap-2">  
                                     <li className='hover:underline hover:decoration-white'>  
-                                        <Link href="/profile" onClick={closeDropdown}><i className='bx bx-user'></i>Manage My account</Link>  
+                                        <Link href="/auth" onClick={closeDropdown}><i className='bx bx-user'></i>Manage My account</Link>  
                                     </li>  
                                     <li className='hover:underline hover:decoration-white'>  
-                                        <Link href="/settings" onClick={closeDropdown}><i className='bx bx-folder-open'></i>My Orders</Link>  
+                                        <Link href="/cart" onClick={closeDropdown}><i className='bx bx-folder-open'></i>My Orders</Link>  
                                     </li>  
                                     <li className='hover:underline hover:decoration-white'>  
-                                        <Link href="/logout" onClick={closeDropdown}><i className='bx bx-x-circle'></i>My Cancellations</Link>  
+                                        <Link href="/checkout" onClick={closeDropdown}><i className='bx bx-x-circle'></i>My Cancellations</Link>  
                                     </li>  
                                     <li className='hover:underline hover:decoration-white '>  
-                                        <Link href="/settings" onClick={closeDropdown}><i className='bx bx-star'></i> Reviews</Link>  
+                                        <Link href="/checkout" onClick={closeDropdown}><i className='bx bx-star'></i> Reviews</Link>  
                                     </li>  
                                     <li className='hover:underline hover:decoration-white'>  
-                                        <Link href="/settings" onClick={closeDropdown}><i className='bx bx-log-out'></i>Logout</Link>  
+                                        <Link href="/auth" onClick={closeDropdown}><i className='bx bx-log-out'></i>Logout</Link>  
                                     </li>  
                                 </ul>  
                             </div>  
@@ -91,10 +91,10 @@ export default function Header() {
                         <SheetContent>  
                             <ul className="flex flex-col gap-3">  
                  <li className='hover:underline hover:decoration-gray-500'><Link href="/">Home</Link></li>  
-                 <li className='hover:underline hover:decoration-gray-500'><Link href="./../products">Products</Link></li>  
-                <li className='hover:underline hover:decoration-gray-500'><Link href="./../contact">Contact</Link> </li>  
-                <li className='hover:underline hover:decoration-gray-500'><Link href="./../about">About</Link></li>  
-                <li className='hover:underline hover:decoration-gray-500'><Link href="./../account">Sign Up</Link></li>  
+                 <li className='hover:underline hover:decoration-gray-500'><Link href="/products">Products</Link></li>  
+                <li className='hover:underline hover:decoration-gray-500'><Link href="/contact">Contact</Link> </li>  
+                <li className='hover:underline hover:decoration-gray-500'><Link href="/about">About</Link></li>  
+                <li className='hover:underline hover:decoration-gray-500'><Link href="/auth">Sign Up</Link></li>  
                             </ul>  
                         </SheetContent>  
                     </Sheet>  
@@ -113,26 +113,26 @@ export default function Header() {
                     <li><Link href="cart"><ShoppingCart/></Link></li>  
                     <li className='relative'>  
                         <div onClick={toggleDropdown} className='flex items-center cursor-pointer'>  
-                            <User />  
+                         <User />  
                       
                         </div>  
                         {isDropdownOpen && (  
                             <div className="absolute right-0 z-10 text-white bg-black text-xs shadow-md rounded mt-2 w-40"  >  
                                 <ul className="flex flex-col p-2 gap-1">  
                                 <li className='hover:underline hover:decoration-white'>  
-                                        <Link href="/profile" onClick={closeDropdown}><i className='bx bx-user'></i>Manage My account</Link>  
+                                        <Link href="/auth" onClick={closeDropdown}><i className='bx bx-user'></i>Manage My account</Link>  
                                     </li>  
                                     <li className='hover:underline hover:decoration-white'>  
-                                        <Link href="/settings" onClick={closeDropdown}><i className='bx bx-folder-open'></i>My Orders</Link>  
+                                        <Link href="/cart" onClick={closeDropdown}><i className='bx bx-folder-open'></i>My Orders</Link>  
                                     </li>  
                                     <li className='hover:underline hover:decoration-white'>  
-                                        <Link href="/logout" onClick={closeDropdown}><i className='bx bx-x-circle'></i>My Cancellations</Link>  
+                                        <Link href="/checkout" onClick={closeDropdown}><i className='bx bx-x-circle'></i>My Cancellations</Link>  
                                     </li>  
                                     <li className='hover:underline hover:decoration-white '>  
-                                        <Link href="/settings" onClick={closeDropdown}><i className='bx bx-star'></i> Reviews</Link>  
+                                        <Link href="/checkout" onClick={closeDropdown}><i className='bx bx-star'></i> Reviews</Link>  
                                     </li>  
                                     <li className='hover:underline hover:decoration-white'>  
-                                        <Link href="/settings" onClick={closeDropdown}><i className='bx bx-log-out'></i>Logout</Link>  
+                                        <Link href="/auth" onClick={closeDropdown}><i className='bx bx-log-out'></i>Logout</Link>  
                                     </li>  
                                 </ul>  
                             </div>  

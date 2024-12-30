@@ -108,9 +108,9 @@ export default function Products() {
    <h1 className='w-10 h-6 ml-2 mt-3 bg-red-600 text-white rounded'>-{product.discount}%</h1>  
      <Heart className='bg-white w-5 h-5 rounded-full ml-20 mt-3 text-[20px]' />  
       </div>  
-   <Eye className='bg-white w-5 h-5 rounded-full ml-48' />  
+   <Eye className='bg-white w-5 h-5 rounded-full ml-48'/>  
   <Image src={product.image} alt={product.title} width={100} height={100}  
- className='w-24 h-24 ml-14 animate ease-linear transition-all hover:animate-pulse hover:w-32 hover:h-32' />  
+ className='w-24 h-24 ml-14 animate ease-linear transition-all hover:scale-105 hover:w-32 hover:h-32' />  
   <h1 className='text-center' id='cart'>Add to cart</h1>  
    </div>  
    <h1 className='bold mt-5'>{product.title}</h1>  

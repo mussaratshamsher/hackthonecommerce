@@ -31,7 +31,7 @@ export default function Products() {
 </div>
 
 
-<div className='flex md:flex-row flex-col md:ml-20 m-auto mt-5 p-3'>
+<div className='grid md:grid-cols-2 lg:grid-cols-4 md:ml-20 m-auto mt-5 p-3'>
 
   {/* product 1 */}
         <div className='w-[230px] h-[300px] md:mt-10 ml-10'>
@@ -107,7 +107,7 @@ export default function Products() {
             </div>
 </div>
             {/* 2nd row products */}
-            <div className='flex md:flex-row flex-col md:ml-20 m-auto mt-5 p-3 gap-2'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-4 md:ml-20 m-auto mt-5 p-3 gap-2'>
             {/* product 5 */}
         <div className='w-[230px] h-auto md:mt-10 ml-10'>
         <div className=' w-[220px] h-[200px] ' id='sale'>

@@ -80,13 +80,10 @@ body {
 #cart{
   margin-top: 6%;
   padding: 2%;
-  display: hidden;
- color:transparent ;
-}
-#cart:hover{
   background: black;
   color: white;
 }
+
 #sale{
   background: rgba(245, 245, 245, 1);
 }
@@ -97,7 +94,7 @@ body {
   background: rgb(60, 241, 60);
 }
 #musicbtn:hover{
-  background: rgb(92, 251, 92);
+  background: rgb(112, 251, 112);
   color: white;
 }
 #musictxt{
@@ -137,7 +134,13 @@ body {
   }  
 }  
 
-
 #back{
 backdrop-filter:blur(40px);
+}
+
+#img{
+  transition:transform 1s;
+}
+#img:hover{
+  transition: all 5s ease-in-out;
 }

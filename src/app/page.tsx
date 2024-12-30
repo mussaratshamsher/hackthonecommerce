@@ -21,13 +21,11 @@ export default function Home(){
 
    return (
 
-<div className='w-full h-auto'>
+<div className='w-full h-auto 2xl:px-60'>
 
 <div className='grid md:grid-cols-4 grid-cols-1 grid-rows-2 md:h-[400px] h-[450px] w-full lg:mb-32'>
-    
-<div className='lg:grid lg:grid-cols-1'>
-
-<div className=' grid grid-cols-2 text-xs md:text-sm ml-5 lg:p-10 lg:pr-16 lg:text-lg md:border-r-2
+    {/* side Navigations  */}
+<div className='grid grid-cols-2 mb-2 lg:grid-cols-1 py-3 text-xs md:text-sm ml-5 xl:p-10 xl:pr-16 lg:text-lg md:border-r-2
  md:border-h lg:ml-10'> 
 <div className='flex md:mt-2'>Men's Fashion <ChevronRight /></div>
 <div className='flex md:mt-2 '>Woman's Fashion <ChevronRight /> </div>
@@ -40,9 +38,9 @@ export default function Home(){
 <div className='md:mt-2'>Groceries & Pets</div>
 <div className='md:mt-2'>Health & Beauty</div>
     </div>
-</div>
 
-<div className='grid md:col-span-3 bg-black md:h-[300px] lg:h-[370px] h-[250px] -mt-32 md:mt-5 md:ml-5 md:mr-10'>
+{/* hero image  */}
+<div className='grid md:col-span-3 bg-black md:h-[300px] lg:h-[370px] h-[250px] -mt-28 md:mt-5 md:ml-5 md:mr-10'>
 
 <div className='grid grid-cols-2'>
 
@@ -61,13 +59,13 @@ export default function Home(){
 </div>
 </div>
 
-<div className='md:-mt-14 mt-14'>
+<div className=' md:-mt-14 -mt-24'>
   <div className='bg-red-500 w-5 h-10 rounded md:ml-32 ml-5 mb-3'> 
     <h1 className='md:ml-10 ml-7 text-red-500 md:mt-7 p-2 mt-14'>Today's </h1>
   </div>
 {/* timer section  */}
-  <div className='grid grid-cols-1 md:grid-cols-4'>
-    <h1 className='text-3xl font-bold md:mt-8  ml-5'>Flash Sales</h1>
+  <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4'>
+    <h1 className='text-3xl font-bold md:mt-8 ml-5 lg:ml-14 xl:ml-20'>Flash Sales</h1>
     <CountdownTimer />
 
     <h1 className='flex md:ml-20  ml-24 gap-3 mt-5 mb-10 '><ArrowLeft className='rounded-full w-10 h-10' id='sale'/> 
