@@ -24,16 +24,18 @@ export default function Header() {
 
     return (  
         <div >
-
+{/* title bar  */}
             <div id='banner'>
             <h1 className='w-full bg-black text-white h-10 md:text-1xl  mt-2 p-2 text-xs' id='scrolling-text'>
                Summer Sale For All Swim Suits & Free Express Delivery - OFF 50%! <span className='font-bold underline'>SHOP NOW</span>
             </h1></div>
+{/* hero section  */}
+            <div className="w-full mt-5 md:h-20 md:flex md: justify-between lg:grid lg:grid-cols-3 lg:p-5 hidden">  
+                <h1 className='font-bold lg:text-4xl md:text-1xl'>Exclusive</h1>  
 
-            <div className="w-full mt-5 md:h-20 md:grid md:grid-cols-3 p-5 hidden">  
-                <h1 className='font-bold text-4xl'>Exclusive</h1>  
-                <ul className="md:flex md:flex-row gap-10 hidden">  
-                    <li className='hover:underline hover:decoration-gray-500'><Link href="/">Home</Link></li>  
+                <ul className="md:flex md:flex-row md:gap-2 lg:gap-5 2xl:gap-10 hidden">  
+                    <li className='hover:underline hover:decoration-gray-500'><Link href="/">Home</Link></li> 
+                    <li className='hover:underline hover:decoration-gray-500'><Link href="./../products">Products</Link></li> 
                     <li className='hover:underline hover:decoration-gray-500'><Link href="./../contact">Contact</Link> </li>  
                     <li className='hover:underline hover:decoration-gray-500'><Link href="./../about">About</Link></li>  
                     <li className='hover:underline hover:decoration-gray-500'><Link href="./../account">Sign Up</Link></li>  
@@ -42,7 +44,7 @@ export default function Header() {
                     <li>  
                         <Link href="products" className='flex flex-row'>  
                             <input type="text" placeholder='What are you looking for?'   
-                                   className='md:w-60 w-40 h-8 bg-gray-300 rounded p-2 border border-gray-500 hover:border-black'/>  
+                                   className='lg:w-60 w-40 h-8 bg-gray-300 rounded p-2 border border-gray-500 hover:border-black'/>  
                             <Search className='-ml-7 -z-0 mt-1'/>  
                         </Link>  
                     </li>  
@@ -83,15 +85,16 @@ export default function Header() {
             {/* for Mobile Screen */}  
             <div className='md:hidden'>  
                 <div className='w-full h-10 grid grid-cols-2 p-2'>  
-                    <h1 className='text-2xl font-bold'> Exclusive</h1>  
+                    <h1 className='text-1xl font-bold'> Exclusive</h1>  
                     <Sheet>  
                         <SheetTrigger className="hover:text-gray-600 "> <SquareMenu className='ml-28'/></SheetTrigger>  
                         <SheetContent>  
                             <ul className="flex flex-col gap-3">  
-                                <li className='hover:underline hover:decoration-gray-500'><Link href="/">Home</Link></li>  
-                                <li className='hover:underline hover:decoration-gray-500'><Link href="./../contact">Contact</Link> </li>  
-                                <li className='hover:underline hover:decoration-gray-500'><Link href="./../about">About</Link></li>  
-                                <li className='hover:underline hover:decoration-gray-500'><Link href="./../account">Sign Up</Link></li>  
+                 <li className='hover:underline hover:decoration-gray-500'><Link href="/">Home</Link></li>  
+                 <li className='hover:underline hover:decoration-gray-500'><Link href="./../products">Products</Link></li>  
+                <li className='hover:underline hover:decoration-gray-500'><Link href="./../contact">Contact</Link> </li>  
+                <li className='hover:underline hover:decoration-gray-500'><Link href="./../about">About</Link></li>  
+                <li className='hover:underline hover:decoration-gray-500'><Link href="./../account">Sign Up</Link></li>  
                             </ul>  
                         </SheetContent>  
                     </Sheet>  

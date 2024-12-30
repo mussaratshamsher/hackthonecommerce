@@ -49,13 +49,13 @@ export default function NewArrival() {
     <p className='md:mt-3 mt-2'>For all orders over $140</p>
 </div>
 
-<div className=' flex flex-col items-center'>
+<div className='flex flex-col items-center'>
     <Image src={services1} alt='' width={500} height={500} className='w-20 h-20'/>
     <h1 className='md:mt-5 mt-3 font-bold'>24/7 CUSTOMER SERVICES</h1>
     <p className='md:mt-3 mt-2'>Friendly 24/7 customer support </p>
 </div>
 
-<div className=' flex flex-col items-center'>
+<div className='flex flex-col items-center'>
     <Image src={services2} alt='' width={500} height={500} className='w-20 h-20'/>
     <h1 className='md:mt-5 mt-3 font-bold'>MONEY BACK GUARANTEE</h1>
     <p className='md:mt-3 mt-2'>We return money within 30 days</p>

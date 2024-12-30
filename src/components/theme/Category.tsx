@@ -10,7 +10,8 @@ export default function Category() {
   </div>
  <div className='grid grid-cols-1 md:grid-cols-2'>
  <h1 className='md:text-3xl text-2xl font-bold md:mt-8 md:ml-32 ml-5'>Browse By Category</h1>
- <h1 className='flex md:ml-[450px] ml-24 gap-3 mt-5 mb-10 '><ArrowLeft className='rounded-full w-10 h-10' id='sale'/> 
+ <h1 className='flex md:ml-[450px] ml-24 gap-3 mt-5 mb-10 '>
+  <ArrowLeft className='rounded-full w-10 h-10' id='sale'/> 
  <ArrowRight className='rounded-full w-10 h-10' id='sale'/></h1>
 </div>
 <div className='md:flex grid grid-cols-2 ml-3'>

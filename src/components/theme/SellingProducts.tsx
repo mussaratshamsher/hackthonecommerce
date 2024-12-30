@@ -7,21 +7,23 @@ import coat from "../../../public/images/coat.png"
 import bag from "../../../public/images/bag.png"
 import table from "../../../public/images/table.png"
 import cooler from "../../../public/images/cooler.png"
+import Link from 'next/link'
 
 
 export default function SellingProducts() {
   return (
-    <div className='w-full'> 
+ <div className='w-full'> 
 
-    <div className='bg-red-500 w-5 h-10 rounded md:ml-32 ml-5 mb-3'> 
+<div className='bg-red-500 w-5 h-10 rounded md:ml-32 ml-5 mb-3'> 
     <h1 className='md:ml-10 ml-7 text-red-500 md:mt-7 mt-10 w-20 '>This Month </h1>
   </div>
  <div className='grid grid-cols-1 md:grid-cols-2'>
  <h1 className='md:text-3xl text-2xl font-bold md:mt-8 md:ml-32 ml-5'>Best Selling Products</h1>
-<Button variant={'ghost'}>View All</Button>
+<Button variant={'ghost'}> <Link href='./../products'>View All</Link></Button>
 </div>
 
 <div className='flex md:flex-row flex-col md:ml-20 m-auto mt-5 p-4'>
+    {/* pro 1  */}
         <div className='w-[220px] h-[300px] md:mt-10 ml-10'>
 
         <div className='w-[220px] h-[200px] ' id='sale'>
@@ -29,7 +31,9 @@ export default function SellingProducts() {
             <h1 className='w-10 h-6 ml-2 mt-3 bg-red-600 text-white rounded'>-40%</h1>
             <Heart className='bg-white w-5 h-5 rounded-full ml-20 mt-3 text-[20px]'/></div>
             <Eye className='bg-white w-5 h-5 rounded-full ml-48'/>    
-            <Image src={coat} alt='' width={100} height={100} className='w-24 h-24 ml-14'/>
+            <Image src={coat} alt='' width={100} height={100} 
+            className='w-24 h-24 ml-14 transition-all hover:scale-125 hover:ease-linear'/>
+
             <h1 className='text-center' id='cart'> Add to cart</h1>
         </div>
         <h1 className='bold mt-5'>The north coat</h1>
@@ -38,14 +42,16 @@ export default function SellingProducts() {
         <i className='bx bxs-star'></i> <i className='bx bxs-star'></i> <i className='bx bxs-star'></i>  
         <span className='text-gray-400'>(88)</span></h1>
             </div>
-
+{/* pro 2  */}
             <div className='w-[220px] h-auto md:mt-10 ml-10'>
         <div className=' w-[220px] h-[200px] ' id='sale'>
             <div className='grid grid-cols-2'>
             <h1 className='w-10 h-6 ml-2 mt-3 bg-red-600 text-white rounded'>-35%</h1>
             <Heart className='bg-white w-5 h-5 rounded-full ml-20 mt-3 text-[20px]'/></div>
             <Eye className='bg-white w-5 h-5 rounded-full ml-48'/>    
-            <Image src={bag} alt='' width={300} height={300} className='w-28 h-24 ml-14'/>
+            <Image src={bag} alt='' width={300} height={300} 
+            className='w-28 h-24 ml-14 transition-all hover:scale-125 hover:ease-linear'/>
+
             <h1 className='text-center' id='cart'> Add to cart</h1>
 
         </div>
@@ -55,14 +61,15 @@ export default function SellingProducts() {
         <i className='bx bxs-star'></i> <i className='bx bxs-star'></i> <i className='bx bxs-star-half'></i>    
         <span className='text-gray-400'>(65)</span></h1>
             </div>
-
+{/* pro 3  */}
             <div className='w-[220px] h-auto md:mt-10 ml-10'>
         <div className=' w-[220px] h-[200px] ' id='sale'>
             <div className='grid grid-cols-2'>
             <h1 className='w-10 h-6 ml-2 mt-3 bg-red-600 text-white rounded'>-35%</h1>
             <Heart className='bg-white w-5 h-5 rounded-full ml-20 mt-3 text-[20px]'/></div>
             <Eye className='bg-white w-5 h-5 rounded-full ml-48'/>    
-            <Image src={cooler} alt='' width={300} height={300} className='w-28 h-24 ml-14'/>
+            <Image src={cooler} alt='' width={300} height={300} 
+            className='w-28 h-24 ml-14 transition-all hover:scale-125 hover:ease-linear'/>
             <h1 className='text-center' id='cart'> Add to cart</h1>
 
         </div>
@@ -72,14 +79,15 @@ export default function SellingProducts() {
         <i className='bx bxs-star'></i> <i className='bx bxs-star'></i> <i className='bx bxs-star-half'></i>  
         <span className='text-gray-400'>(65)</span></h1>
             </div>
-
+  {/* pro 4  */}
             <div className='w-[220px] h-auto md:mt-10 ml-10'>
         <div className=' w-[220px] h-[200px] ' id='sale'>
             <div className='grid grid-cols-2'>
             <h1 className='w-10 h-6 ml-2 mt-3 bg-red-600 text-white rounded'>-35%</h1>
             <Heart className='bg-white w-5 h-5 rounded-full ml-20 mt-3 text-[20px]'/></div>
             <Eye className='bg-white w-5 h-5 rounded-full ml-48'/>    
-            <Image src={table} alt='' width={300} height={300} className='w-28 h-24 ml-14'/>
+            <Image src={table} alt='' width={300} height={300}
+             className='w-28 h-24 ml-14 transition-all hover:scale-125 hover:ease-linear'/>
             <h1 className='text-center' id='cart'> Add to cart</h1>
 
         </div>

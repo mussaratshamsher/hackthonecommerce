@@ -15,7 +15,7 @@ import dot1 from "../../../public/images/dot1.png"
 import dot2 from "../../../public/images/dot2.png"
 import dot3 from "../../../public/images/dot3.png"
 import { Button } from '../ui/button'
-
+import Link from 'next/link'
 
 
 export default function Products() {
@@ -40,7 +40,8 @@ export default function Products() {
             
             <Heart className='bg-white w-5 h-5 rounded-full ml-48 mt-3 text-[20px]'/></div>
             <Eye className='bg-white w-5 h-5 rounded-full ml-48'/>    
-            <Image src={dogfeed} alt='' width={100} height={100} className='w-24 h-24 ml-14'/>
+            <Image src={dogfeed} alt='' width={100} height={100} 
+            className='w-24 h-24 ml-14 transition-all hover:scale-125 hover:ease-linear'/>
             <h1 className='text-center' id='cart'> Add to cart</h1>
         </div>
         <h1 className='bold mt-5'>Breed Dry Dog Feed</h1>
@@ -57,7 +58,8 @@ export default function Products() {
            
             <Heart className='bg-white w-5 h-5 rounded-full ml-48 mt-3 text-[20px]'/></div>
             <Eye className='bg-white w-5 h-5 rounded-full ml-48'/>    
-            <Image src={digital} alt='' width={300} height={300} className='w-28 h-24 ml-14'/>
+            <Image src={digital} alt='' width={300} height={300} 
+            className='w-28 h-24 ml-14 transition-all hover:scale-125 hover:ease-linear'/>
             <h1 className='text-center' id='cart'> Add to cart</h1>
 
         </div>
@@ -74,7 +76,8 @@ export default function Products() {
            
             <Heart className='bg-white w-5 h-5 rounded-full ml-48 mt-3 text-[20px]'/></div>
             <Eye className='bg-white w-5 h-5 rounded-full ml-48'/>    
-            <Image src={laptop} alt='' width={300} height={300} className='w-28 h-24 ml-14'/>
+            <Image src={laptop} alt='' width={300} height={300} 
+            className='w-28 h-24 ml-14 transition-all hover:scale-125 hover:ease-linear'/>
             <h1 className='text-center' id='cart'> Add to cart</h1>
 
         </div>
@@ -91,7 +94,8 @@ export default function Products() {
             <h1 className='w-10 h-6 ml-2 mt-3 bg-red-600 text-white rounded'>-35%</h1>
             <Heart className='bg-white w-5 h-5 rounded-full ml-20 mt-3 text-[20px]'/></div>
             <Eye className='bg-white w-5 h-5 rounded-full ml-48'/>    
-            <Image src={facewash} alt='' width={300} height={300} className='w-28 h-24 ml-14'/>
+            <Image src={facewash} alt='' width={300} height={300} 
+            className='w-28 h-24 ml-14 transition-all hover:scale-125 hover:ease-linear'/>
             <h1 className='text-center' id='cart'> Add to cart</h1>
 
         </div>
@@ -111,7 +115,8 @@ export default function Products() {
             <h1 className='w-10 h-6 ml-2 mt-3 bg-green-500 text-white rounded'>Now</h1>
             <Heart className='bg-white w-5 h-5 rounded-full ml-20 mt-3 text-[20px]'/></div>
             <Eye className='bg-white w-5 h-5 rounded-full ml-48'/>    
-            <Image src={mercedes} alt='' width={300} height={300} className='w-28 h-24 ml-14'/>
+            <Image src={mercedes} alt='' width={300} height={300} 
+            className='w-28 h-24 ml-14 transition-all hover:scale-125 hover:ease-linear'/>
             <h1 className='text-center' id='cart'> Add to cart</h1>
 
         </div>
@@ -129,7 +134,8 @@ export default function Products() {
             <div className='grid grid-cols-2'>     
             <Heart className='bg-white w-5 h-5 rounded-full ml-48 mt-3 text-[20px]'/></div>
             <Eye className='bg-white w-5 h-5 rounded-full ml-48'/>    
-            <Image src={sneakers} alt='' width={300} height={300} className='w-28 h-24 ml-14'/>
+            <Image src={sneakers} alt='' width={300} height={300} 
+            className='w-28 h-24 ml-14 transition-all hover:scale-125 hover:ease-linear'/>
             <h1 className='text-center' id='cart'> Add to cart</h1>
 
         </div>
@@ -150,7 +156,8 @@ export default function Products() {
             <h1 className='w-10 h-6 ml-2 mt-3 bg-green-500 text-white rounded'>Now</h1>
             <Heart className='bg-white w-5 h-5 rounded-full ml-20 mt-3 text-[20px]'/></div>
             <Eye className='bg-white w-5 h-5 rounded-full ml-48'/>    
-            <Image src={toygame} alt='' width={300} height={300} className='w-28 h-24 ml-14'/>
+            <Image src={toygame} alt='' width={300} height={300} 
+            className='w-28 h-24 ml-14 transition-all hover:scale-125 hover:ease-linear'/>
             <h1 className='text-center' id='cart'> Add to cart</h1>
 
         </div>
@@ -169,7 +176,8 @@ export default function Products() {
             <div className='grid grid-cols-2'>
             <Heart className='bg-white w-5 h-5 rounded-full ml-48 mt-3 text-[20px]'/></div>
             <Eye className='bg-white w-5 h-5 rounded-full ml-48'/>    
-            <Image src={jacket} alt='' width={300} height={300} className='w-28 h-24 ml-14'/>
+            <Image src={jacket} alt='' width={300} height={300} 
+            className='w-28 h-24 ml-14 transition-all hover:scale-125 hover:ease-linear'/>
             <h1 className='text-center' id='cart'> Add to cart</h1>
 
         </div>
@@ -184,7 +192,8 @@ export default function Products() {
 
 </div>
 
-<Button variant={'destructive'} className='md:ml-[550px] ml-24 mt-10 mb-5'>View All Products</Button>
+<Button variant={'destructive'} className='md:ml-[550px] ml-24 mt-10 mb-5'>
+    <Link href='./../products'>View All Products</Link></Button>
 
 
 
