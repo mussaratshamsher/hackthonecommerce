@@ -108,33 +108,3 @@ interface IProducts{
   };
   
   export default useCart;
-
-// const useCart = () => {  
-//     const [cart, setCart] = useState<IProducts[]>(() => {  
-//         const savedCart = localStorage.getItem('cart');  
-//         return savedCart ? JSON.parse(savedCart) : [];  
-//     });  
-
-//     const addToCart = (product: IProducts) => {  
-//         setCart(prevCart => {  
-//             const productExists = prevCart.find(item => item.id === product.id);  
-//             if (productExists) {  
-//                 // If the product already exists, increase its quantity  
-//                 const updatedCart = prevCart.map(item =>  
-//                     item.id === product.id ? { ...item, quantity: (item.quantity || 1) + 1 } : item  
-//                 );  
-//                 localStorage.setItem('cart', JSON.stringify(updatedCart));  
-//                 return updatedCart;  
-//             }  
-//             // If the product doesn't exist, add it with quantity 1  
-//             const newCart = [...prevCart, { ...product, quantity: 1 }];  
-//             localStorage.setItem('cart', JSON.stringify(newCart));  
-//             return newCart;  
-//         });  
-//     };  
-
-//     return { cart, addToCart };  
-// };  
-
-// export default useCart;
-
